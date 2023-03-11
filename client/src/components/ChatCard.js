@@ -6,23 +6,25 @@ const ChatCard = () => {
         setSearchText(e.target.value)
     }
     const handleClick = async() => {
-        console.log("Here")
+        // console.log("Here")
         try{
-            const data = await fetch("https://ens2-0-gpt3.onrender.com/",{
+            const data = await fetch("http://localhost:3000/getResponse",{
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body:JSON.stringify({
-                    prompt: {
-                        content: searchText
-                    },
+                    prompt: searchText,
                 }),
             })
-            console.log(data)
+            // console.log(data);
+            console.log("Got response")
+            const json = await data?.json()
+            setData(json.answer)
+            // console.log(data)
         }
         catch(e){
-            console.log(e)
+            setData("Sorry Cannot assist in this scenario!!!")
         }
     }
     return(

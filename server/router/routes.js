@@ -14,14 +14,13 @@ router.route("/").get((req, res) => {
 });
 router.route("/").post(async (req, res) => {
   try {
-    const { content } = req.body.prompt;
-    console.log(content)
+    const { prompt } = req.body
     const response = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: content }],
+      messages: [{ role: "user", content: prompt }],
     });
     const answer = (response?.data?.choices[0]?.message?.content).replace(
-      /[\n0-9-]/g,
+      /[.]$[\n0-9-]/g,
       ""
     );
     res.status(200).json({
