@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&family=Open+Sans:wght@400;600;700&family=Overpass:wght@400;700&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header_components{
+    background-image: linear-gradient(90deg,#513eff 0%,#52e5ff 100%);
+    height: 100px;
+    /* width: 100vw; */
+    /* border: 2px solid grey; */
+}
+.carousal-top{
+    background-image: linear-gradient(90deg,#513eff 0%,#52e5ff 100%);
+    min-height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding-top: 100px;
+    align-items: center;
+    gap: 80px;
+    /* border: 2px solid grey; */
+    overflow: hidden;
+
+    /* border: 2px solid red; */
+}
+.carousal-body{ 
+    font-family: "Overpass";
+    font-size: 68px;
+    /* border: 2px solid grey; */
+}
+.carousal-body > p{
+    /* border: 2px solid red; */
+    font-weight: 400;
+    width: 60vw;
+    color: white;
+    padding: 50px;
+    /* border: 2px solid grey; */
+
+}
+.carousal_navigation{
+    display: flex;
+    gap: 30px;
+    /* border: 2px solid grey; */
+
+}
+.carousal_navigation > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.carousal_navigation > div > p{
+    font-family: "Overpass";
+    font-size: 20px;
+    color: white
+}
+.carousal_navigation > div{
+    height: 150px;
+    width: 100px;
+    transform: all 0.5s ease;
+    /* border: 2px solid grey; */
+
+}
+.carousal_navigation > div > img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+.filled_dot{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.images_carousal{
+    /* border: 2px solid grey; */
+    /* height: 300px; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    /* height: 400px; */
+}
+.images_navigation{
+    /* border: 2px solid grey; */
+    /* padding: 20px; */
+    height: 350px;
+    width: 500px;
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+.images_navigation_none{
+    height: 350px;
+    width: 500px;
+}
+/* .images_navigation_none:hover{
+    transform: scale(1.03);
+} */
+.btn_comp{
+    /* background-color: ; */
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    align-items: center;
+}
+.btn-carousal{
+    height: 40px;
+    width: 150px;
+    border-radius: 40px;
+    font-family: "Overpass";
+    font-size: 20px;
+    background-color: #5284ff;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0, 0.75);
+}
+.info_comp{
+    height: 300px;
+    /* box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.75); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* width: 100vw; */
+}
+.heading{
+    font-family: "Overpass";
+    font-size: 60px;
+    color:#2c46a6
+}
+.heading_children{
+    font-size: 30px;
+}
+.para_head{
+    font-family: "Overpass";
+    width: 800px;
+}
+.para_head > p{
+    opacity: 0.7;
+}
+.ens_add{
+    display: flex;
+    gap: 30px;
+}
+.ens_domains, .address{
+    height: 50px;
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Overpass";
+    font-size: 30px;
+    opacity: 0.8;
+}
+.footer{
+    height: 100px;
+    background-color: #1e3277;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer-left{
+    height: 70px;
+    width: 200px;
+    border: 2px solid grey;
+}
+.footer-right{
+    height: 70px;
+    width: 400px;
+    border: 2px solid grey;
+}
+
