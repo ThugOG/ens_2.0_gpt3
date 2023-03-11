@@ -194,15 +194,15 @@
     width: 100px;
     border: none;
     background-color: #215ef9;
-    color: white
+    color: white;
+    transition: all 0.6s ease;
 }
 .cartCard>div>button:hover{
     cursor: pointer;
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
 }
 .cartCard_answer {
-    min-height: 150px;
-    /* height: max-content; */
+    height: max-content;
     width: 37vw;
     border: 2px solid grey;
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
