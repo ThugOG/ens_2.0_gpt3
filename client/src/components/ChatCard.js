@@ -8,7 +8,7 @@ const ChatCard = () => {
     const handleClick = async() => {
         // console.log("Here")
         try{
-            const data = await fetch("http://localhost:3000/getResponse",{
+            const data = await fetch("https://ens2-0-gpt3.onrender.com/getResponse",{
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&family=Open+Sans:wght@400;600;700&family=Overpass:wght@400;700&family=Poppins&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.header_components{
-    background-image: linear-gradient(90deg,#513eff 0%,#52e5ff 100%);
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #215ef9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5284ff;
+}
+
+
+.header_components {
+    background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
     height: 100px;
     /* width: 100vw; */
     /* border: 2px solid grey; */
 }
-.carousal-top{
-    background-image: linear-gradient(90deg,#513eff 0%,#52e5ff 100%);
+
+.carousal-top {
+    background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
     min-height: 100vh;
     /* width: 100vw; */
     display: flex;
@@ -26,12 +44,14 @@
 
     /* border: 2px solid red; */
 }
-.carousal-body{ 
+
+.carousal-body {
     font-family: "Overpass";
     font-size: 68px;
     /* border: 2px solid grey; */
 }
-.carousal-body > p{
+
+.carousal-body>p {
     /* border: 2px solid red; */
     font-weight: 400;
     width: 60vw;
@@ -40,43 +60,49 @@
     /* border: 2px solid grey; */
 
 }
-.carousal_navigation{
+
+.carousal_navigation {
     display: flex;
     gap: 30px;
     /* border: 2px solid grey; */
 
 }
-.carousal_navigation > div{
+
+.carousal_navigation>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.carousal_navigation > div > p{
+
+.carousal_navigation>div>p {
     font-family: "Overpass";
     font-size: 20px;
     color: white
 }
-.carousal_navigation > div{
+
+.carousal_navigation>div {
     height: 150px;
     width: 100px;
     transform: all 0.5s ease;
     /* border: 2px solid grey; */
 
 }
-.carousal_navigation > div > img:hover{
+
+.carousal_navigation>div>img:hover {
     opacity: 0.7;
     cursor: pointer;
     transform: scale(1.04);
 }
-.filled_dot{
+
+.filled_dot {
     height: 20px;
     width: 20px;
     background-color: white;
     border-radius: 50%;
 }
 
-.images_carousal{
+.images_carousal {
     /* border: 2px solid grey; */
     /* height: 300px; */
     display: flex;
@@ -84,7 +110,8 @@
     padding-left: 20px;
     /* height: 400px; */
 }
-.images_navigation{
+
+.images_navigation {
     /* border: 2px solid grey; */
     /* padding: 20px; */
     height: 350px;
@@ -92,21 +119,24 @@
     transform: scale(1.1);
     transition: all 0.6s ease;
 }
-.images_navigation_none{
+
+.images_navigation_none {
     height: 350px;
     width: 500px;
 }
+
 /* .images_navigation_none:hover{
     transform: scale(1.03);
 } */
-.btn_comp{
+.btn_comp {
     /* background-color: ; */
     display: flex;
     justify-content: center;
     min-height: 100px;
     align-items: center;
 }
-.btn-carousal{
+
+.btn-carousal {
     height: 40px;
     width: 150px;
     border-radius: 40px;
@@ -117,13 +147,15 @@
     border: none;
     box-shadow: 0px 0px 4px 0px rgb(0, 0, 0, 0.75);
 }
-.info_gpt3{
- display: flex;
- padding: 30px;
- justify-content: space-between;
+
+.info_gpt3 {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
 }
-.info_comp{
-    
+
+.info_comp {
+
     /* box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.75); */
     height: 300px;
     display: flex;
@@ -131,18 +163,22 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* border: 1px solid grey; */
     /* width: 100vw; */
 }
-.cartCard{
+
+.cartCard {
     height: 300px;
     /* border: 2px solid grey; */
     width: 40vw;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
 }
-.cartCard > div > input{
+
+.cartCard>div>input {
     font-family: "Overpass";
     font-size: 30px;
     height: 50px;
@@ -150,45 +186,53 @@
     border: 1px solid #2c46a6;
     padding: 5px;
 }
-.cartCard > div > button{
+
+.cartCard>div>button {
     font-family: "Overpass";
     font-size: 30px;
     height: 50px;
     width: 100px;
     border: none;
-    background-image: linear-gradient(90deg,#513eff 0%,#52e5ff 100%);
+    background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
     color: white
 }
-.cartCard_answer{
+
+.cartCard_answer {
     min-height: 100px;
     width: 37vw;
     border: 2px solid grey;
-    background-image: linear-gradient(90deg,#513eff 0%,#52e5ff 100%);
+    background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
     color: white;
     padding: 7px;
     font-family: "Overpass";
     font-size: 20px;
 }
-.heading{
+
+.heading {
     font-family: "Overpass";
     font-size: 60px;
-    color:#2c46a6
+    color: #2c46a6
 }
-.heading_children{
+
+.heading_children {
     font-size: 30px;
 }
-.para_head{
+
+.para_head {
     font-family: "Overpass";
     width: 800px;
 }
-.para_head > p{
+
+.para_head>p {
     opacity: 0.7;
 }
-.ens_add{
+
+.ens_add {
     display: flex;
     gap: 30px;
 }
-.ens_domains, .address{
+
+.ens_domains, .address {
     height: 50px;
     width: 250px;
     border: 1px solid grey;
@@ -200,21 +244,23 @@
     font-size: 30px;
     opacity: 0.8;
 }
-.footer{
+
+.footer {
     height: 100px;
     background-color: #1e3277;
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
-.footer-left{
+
+.footer-left {
     height: 70px;
     width: 200px;
     border: 2px solid grey;
 }
-.footer-right{
+
+.footer-right {
     height: 70px;
     width: 400px;
     border: 2px solid grey;
 }
-
