@@ -31,7 +31,7 @@
 
 .carousal-top {
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
-    min-height: 100vh;
+    height: 1000px;
     /* width: 100vw; */
     display: flex;
     flex-direction: column;
@@ -48,15 +48,21 @@
 .carousal-body {
     font-family: "Overpass";
     font-size: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    /* align-items: center; */
     /* border: 2px solid grey; */
 }
 
 .carousal-body>p {
     /* border: 2px solid red; */
     font-weight: 400;
-    width: 60vw;
     color: white;
-    padding: 50px;
+    width: 800px;
+    /* align-self: center; */
+    /* padding: 50px; */
     /* border: 2px solid grey; */
 
 }
@@ -136,6 +142,7 @@
     align-items: center;
 }
 
+
 .btn-carousal {
     height: 40px;
     width: 150px;
@@ -146,6 +153,11 @@
     color: white;
     border: none;
     box-shadow: 0px 0px 4px 0px rgb(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+}
+
+.btn-carousal:hover {
+    cursor: pointer;
 }
 
 .info_gpt3 {
@@ -197,12 +209,15 @@
     color: white;
     transition: all 0.6s ease;
 }
-.cartCard>div>button:hover{
+
+.cartCard>div>button:hover {
     cursor: pointer;
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
 }
+
 .cartCard_answer {
-    height: max-content;
+    height: 500px;
+    position: relative;
     width: 37vw;
     border: 2px solid grey;
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
@@ -210,6 +225,7 @@
     padding: 7px;
     font-family: "Overpass";
     font-size: 20px;
+    overflow: auto;
 }
 
 .heading {
@@ -267,4 +283,33 @@
     height: 70px;
     width: 400px;
     border: 2px solid grey;
+}
+
+.loader {
+    height: 60px;
+    width: 60px;
+    border: 5px solid grey;
+    border-top: 5px solid #5284ff;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    /* position: absolute;
+    top: 0; */
+}
+.loader_black_out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: 1;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

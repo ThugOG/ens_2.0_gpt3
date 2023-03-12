@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.search_dapp{
+    background-color: rgb(240, 246, 250);
+    height: 100vh;
+
+}
+.search_dapp_component{
+    height: 90px;
+    width: 100vw;
+    /* border: 1px solid red; */
+    display: flex;
+    overflow:auto ;
+    /* padding: 5px; */
+}
+.logo{
+    height: 90px;
+    /* background-color: white; */
+    width: 300px;
+    border-right: 1px solid grey;
+}
+.search_dapp_component > input{
+    height: 90px;
+    width: 72vw;
+    border: none;
+    font-family: "Overpass";
+    font-size: 40px;
+    padding-left: 50px;
+    background-color: white;
+    opacity: 0.5;
+}
+.search_dapp_component > button{
+    height : 90px;
+    width: 10vw;
+    background-color: rgb(82, 132, 255);
+    font-family: "Overpass";
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+.search_dapp_component > button:hover{
+    cursor: pointer;
+}
+.body_component{
+    display: flex;
+}
+.left_dapp_component{
+    height: 80vh;
+    flex-basis: 19%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+.left_dapp_component > button{
+    height: 40px;
+    width: 150px;
+    font-family: "Overpass";
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(245, 166, 35);
+    border: 2px solid rgb(245, 166, 35);
+    border-radius: 5px;
+}
+.left_dapp_component > button:hover{
+    cursor: pointer;
+}
+.left_dapp_component > ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: "Overpass";
+    font-size: 30px;
+    font-family: "Overpass";
+    /* font-size: 20px; */
+    gap: 15px;
+    opacity: 0.5;
+}
+.left_dapp_component > ul > a{
+    text-decoration: none;
+}
+.left_dapp_component > ul > a > li{
+    color: black
+}
+.right_dapp_component{
+    height: 80vh;
+    width: 295px;
+    /* border: 2px solid red; */
+    flex-basis: 81%;
+    padding: 20px;
+    font-family: "Overpass";
+    font-size: 20px;
+}
+.right_dapp_component > h3{
+    opacity: 0.6;
+}
+.name_card{
+    border-left: 5px solid grey;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgb(214, 234, 248);
+    border-radius: 0px 5px 5px 0px ;
+}
+.name_card_left{
+    flex-basis: 40%;
+    padding-left: 10px;
+}
+.name_card_left > p{
+    opacity: 0.7;
+}
+.name_card_right{
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+    gap: 20px;
+    justify-content: space-around;
+    
+    /* border: 2px solid red; */
+}
+.name_card_right > p{
+    opacity: 0.7;
+}
+.heart_rating{
+    background:none;
+    border: none;
+}
+.heart_rating:hover{
+    cursor: pointer;
+}
+.heart_rating > img{
+    height: 40px;
+    width: 40px;;
+}
+.details{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(82, 132, 255);
+    font-family: "Overpass";
+    color: white;
+    border: none;
+}
+
+.details:hover{
+    cursor: pointer;
+}
