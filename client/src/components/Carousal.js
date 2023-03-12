@@ -32,7 +32,23 @@ const Carousal = () => {
       </div>
       <div className="images_carousal">
         {images.map((single, index) => {
-          return <>{<img src={single} className={(visible == index ? "images_navigation":"images_navigation_none")}></img>}</>;
+          return (
+            <>
+              {
+                <img
+                  onClick={() => {
+                    handleClick(index);
+                  }}
+                  src={single}
+                  className={
+                    visible == index
+                      ? "images_navigation"
+                      : "images_navigation_none"
+                  }
+                ></img>
+              }
+            </>
+          );
         })}
       </div>
     </div>

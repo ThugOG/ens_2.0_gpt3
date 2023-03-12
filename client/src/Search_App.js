@@ -1,20 +1,27 @@
 import { Outlet, useParams } from "react-router-dom";
 import "../search_app.css";
 import { Link } from "react-router-dom";
+import { createContext, useState } from "react";
 // import NameCard from "./components/NameCard";
 // import Display from "./components/Display";
+export const DomainContext = createContext("");
 const Search_App = () => {
-  const [searchText, setSearchText] = useState("")
+  const [searchText, setSearchText] = useState("");
   const { id } = useParams();
-  const handleClick = (e) => {
-    setSearchText(e.target.value)
-  }
+  const handleChange = (e) => {
+    setSearchText(e.target.value);
+  };
   return (
     <div className="search_dapp">
       <div className="search_dapp_component">
         <div className="logo"></div>
-        <input value={searchText} type="text" placeholder="Search ens name..."></input>
-        <button onClick={handleClick}>Search</button>
+        <input
+          onChange={handleChange}
+          value={searchText}
+          type="text"
+          placeholder="Search ens name..."
+        ></input>
+        <Link to={"/dapp/search/" + searchText.toLowerCase()}><button>Search</button></Link>
       </div>
       <div className="body_component">
         <div className="left_dapp_component">
@@ -32,7 +39,9 @@ const Search_App = () => {
           </ul>
         </div>
         <div className="right_dapp_component">
-          <Outlet />
+          <DomainContext.Provider value={id}>
+            <Outlet />
+          </DomainContext.Provider>
         </div>
       </div>
     </div>

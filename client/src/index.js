@@ -7,7 +7,6 @@ import App_Dapp from "./App_Dapp";
 import Search_App from "./Search_App";
 import Favourite from "./Favourite";
 import Display from "./components/Display";
-import FAQ from "./FAQ";
 import store from "./utils/store";
 const Router = createBrowserRouter([
   {

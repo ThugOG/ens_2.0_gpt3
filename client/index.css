@@ -116,7 +116,9 @@
     padding-left: 20px;
     /* height: 400px; */
 }
-
+.images_carousal:hover{
+    cursor: pointer;
+}
 .images_navigation {
     /* border: 2px solid grey; */
     /* padding: 20px; */

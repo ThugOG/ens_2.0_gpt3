@@ -1,9 +1,12 @@
 import { useState } from "react";
 import {useDispatch} from 'react-redux'
 import { additem } from "../utils/slices/favourite";
+import { useContext } from "react";
+import { DomainContext } from "../Search_App";
 const NameCard = () => {
     const dispatch = useDispatch()
   const [favourites, setFavourite] = useState(true);
+  const value = useContext(DomainContext)
   const handleClick = () => {
     setFavourite(!favourites)
     dispatch(additem({name: 34}))
@@ -11,7 +14,7 @@ const NameCard = () => {
   return (
     <div className="name_card">
       <div className="name_card_left">
-        <p>ens.eth</p>
+        <p>{value}.eth</p>
       </div>
       <div className="name_card_right">
         <p>Expires 2030.08.26 at 05:36 (UTC+05:30)</p>
