@@ -14,14 +14,18 @@ const Search_App = () => {
   return (
     <div className="search_dapp">
       <div className="search_dapp_component">
-        <div className="logo"></div>
+        <div className="logo">
+        <Link to="/"><img src="https://i.ibb.co/CvFRc8m/logo-no-back.png"></img></Link>
+        </div>
         <input
           onChange={handleChange}
           value={searchText}
           type="text"
           placeholder="Search ens name..."
         ></input>
-        <Link to={"/dapp/search/" + searchText.toLowerCase()}><button>Search</button></Link>
+        <Link to={"/dapp/search/" + searchText.toLowerCase()}>
+          <button>Search</button>
+        </Link>
       </div>
       <div className="body_component">
         <div className="left_dapp_component">

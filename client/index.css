@@ -25,10 +25,18 @@
 .header_components {
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
     /* width: 100vw; */
     /* border: 2px solid grey; */
 }
-
+.header_img > a > img{
+    filter: invert();
+    /* border: 2px solid grey; */
+    height: 100px;
+}
 .carousal-top {
     background-image: linear-gradient(90deg, #513eff 0%, #52e5ff 100%);
     height: 1000px;
@@ -200,6 +208,9 @@
     border: 1px solid #2c46a6;
     padding: 5px;
 }
+.cartCard > div > input:focus{
+    outline: none;
+}
 
 .cartCard>div>button {
     font-family: "Overpass";
@@ -278,15 +289,34 @@
 .footer-left {
     height: 70px;
     width: 200px;
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
+}
+.footer-left > img{
+    height: 70px;
+    width: 200px;
+    filter: invert()
+    /* border: 2px solid red; */
 }
 
 .footer-right {
     height: 70px;
     width: 400px;
-    border: 2px solid grey;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-right >button{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
+.footer-right >button:hover{
+    cursor: pointer;
+}
 .loader {
     height: 60px;
     width: 60px;

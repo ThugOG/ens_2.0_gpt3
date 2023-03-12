@@ -17,8 +17,17 @@
     /* border: 2px solid red; */
     height: 90px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px;
+    /* border: 2px solid red; */
+
+}
+.header_app> a > img{
+    /* border: 2px solid red; */
+    filter: invert();
+    height: 100px;
+    /* width: 100%; */
 }
 .header_app >button{
     background-color: transparent;
@@ -27,7 +36,8 @@
     font-size: 16px;
     font-family: "Overpass";
     /* border: 1px solid white; */
-    color: black;
+    border: 2px solid white;
+    color: white;
 }
 .header_app >button:hover{
     cursor: pointer;

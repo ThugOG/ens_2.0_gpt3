@@ -1,6 +1,7 @@
 import "../app_index.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 const App_Dapp = () => {
   const [searchText, setSearchText] = useState("");
   const handleChange = (e) => {
@@ -9,6 +10,7 @@ const App_Dapp = () => {
   return (
     <div className="app_dapp">
       <div className="header_app">
+        <Link to="/"><img src="https://i.ibb.co/CvFRc8m/logo-no-back.png"></img></Link>
         <button>Connect</button>
       </div>
       <div className="search">
