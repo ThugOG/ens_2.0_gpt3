@@ -8,6 +8,7 @@ import Search_App from "./Search_App";
 import Favourite from "./Favourite";
 import Display from "./components/Display";
 import store from "./utils/store";
+import Register from "./Register";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +33,10 @@ const Router = createBrowserRouter([
       {
         path: "favourite",
         element: <Favourite />,
+      },
+      {
+        path: ":id/register",
+        element: <Register />,
       },
     ],
   },
