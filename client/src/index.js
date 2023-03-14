@@ -9,6 +9,8 @@ import Favourite from "./Favourite";
 import Display from "./components/Display";
 import store from "./utils/store";
 import Register from "./Register";
+import Details from "./components/Details";
+import RegisterTimeCost from "./components/RegisterTimeCost";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +39,16 @@ const Router = createBrowserRouter([
       {
         path: ":id/register",
         element: <Register />,
+        children: [
+          {
+            path: "",
+            element: <RegisterTimeCost />
+          },
+          {
+            path: "details",
+            element: <Details />
+          }
+        ]
       },
     ],
   },
